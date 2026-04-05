@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Hasif | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<div class="loader" id="loader">
+  <div class="loader-text"><span>K</span><span>H</span><span style="color:#ff6b35">.</span></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">K.<span>  Hasif</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#sports">Sports</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge reveal"><span class="badge-dot"></span> Available for Opportunities</div>
+    <h1 class="hero-name reveal delay-1">
+      <span class="name-line"> Mohamed</span>
+      <span class="name-line stroke">Hasif<span class="orange-dot">  K.</span></span>
+    </h1>
+    <div class="hero-role reveal delay-2"><span>I'm a </span><span class="typed" id="typedText"></span><span class="type-cursor">|</span></div>
+    <p class="hero-desc reveal delay-3">BSc. Computer Science with Cognitive System · E.G.S Pillay Arts & Science College</p>
+    <div class="hero-btns reveal delay-4">
+      <a href="#contact" class="btn-primary">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#about" class="btn-ghost">Who Am I?</a>
+    </div>
+  </div>
+  <div class="hero-avatar-wrap reveal delay-2">
+    <div class="avatar-glow"></div>
+    <div class="avatar-main">KH</div>
+    <div class="orbit orbit1"><div class="orbit-dot"><i class="fa-brands fa-html5"></i></div></div>
+    <div class="orbit orbit2"><div class="orbit-dot"><i class="fa-brands fa-css3-alt"></i></div></div>
+    <div class="orbit orbit3"><div class="orbit-dot"><i class="fa-brands fa-js"></i></div></div>
+  </div>
+  <div class="scroll-down">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="sec-head reveal">
+    <span class="sec-num">01</span>
+    <div><span class="sec-tag">About Me</span><h2>Who Am <em>I?</em></h2></div>
+  </div>
+  <div class="about-grid">
+    <div class="reveal-left">
+      <div class="av-card">
+        <div class="av-bg"></div>
+        <div class="av-mono">KH</div>
+        <div class="av-badge">Open for <br/>Opportunities </div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <p class="a-intro">Hi, I am <strong>Mohamed Hasif K</strong>, a motivated and enthusiastic individual. 👋</p>
+      <p class="a-body">My academic background is in <span class="highlight">B.sc. Computer Science with Cognitive Systems</span>, with a strong interest in building modern and creative digital solutions.</p>
+      <p class="a-body">I am a <span class="highlight">quick learner</span> who continuously improves day by day and adapts to evolving technologies. I avtively explore <span class="highlight"> AI - driven approaches</span> to enhance my skills and stay industry-ready.</p>
+      <p class="a-body">I am looking for opportunities to <span class="highlight"> learn, grow, and contribute effectively</span> in a professional environment.</p>
+      <p class="a-body">I am comfortable working in team environments and contribute with a <span class="highlight">collaborative mindset</span>.</p>
+      <div class="lang-box reveal delay-1">
+        <h4>🌐 Languages I Speak</h4>
+        <div class="lang-chips">
+          <span class="lang-chip">🎯 Tamil — Native</span>
+          <span class="lang-chip">🌍 English — Conversational</span>
+        </div>
+      </div>
+      <div class="lang-box reveal delay-2">
+        <h4>🧠 Technical &amp; Soft Skills</h4>
+        <div class="lang-chips">
+          <span class="lang-chip">🖥️ Computer Maintenance</span>
+          <span class="lang-chip">🔍 Problem Solving</span>
+          <span class="lang-chip">⏱️ Time Management</span>
+        </div>
+      </div>
+      <div class="a-stats">
+        <div class="a-stat reveal delay-1"><span class="a-num" data-count="7">0</span><p>Skills</p></div>
+        <div class="a-stat reveal delay-2"><span class="a-num" data-count="2">0</span><span>+</span><p>Projects</p></div>
+        <div class="a-stat reveal delay-3"><span class="a-num" data-count="100">0</span><span>%</span><p>Passion</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="sec-head reveal">
+    <span class="sec-num">02</span>
+    <div><span class="sec-tag">My Skills</span><h2>What I <em>Know</em></h2></div>
+  </div>
+  <div class="skills-grid">
+    <div class="sk-card reveal delay-1">
+      <div class="sk-top"><div class="sk-ico html"><i class="fa-brands fa-html5"></i></div><span class="sk-pct">80%</span></div>
+      <h3>HTML</h3><p>Semantic markup and responsive web page structure.</p>
+      <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div><span class="sk-lvl">Intermediate</span>
+    </div>
+    <div class="sk-card reveal delay-2">
+      <div class="sk-top"><div class="sk-ico css"><i class="fa-brands fa-css3-alt"></i></div><span class="sk-pct">75%</span></div>
+      <h3>CSS</h3><p>Dark-themed UI, animations, flexbox and grid layouts.</p>
+      <div class="sk-bar"><div class="sk-fill" data-w="75"></div></div><span class="sk-lvl">Intermediate</span>
+    </div>
+    <div class="sk-card reveal delay-3">
+      <div class="sk-top"><div class="sk-ico js"><i class="fa-brands fa-js"></i></div><span class="sk-pct">50%</span></div>
+      <h3>JavaScript</h3><p>Basic DOM manipulation and interactive web features.</p>
+      <div class="sk-bar"><div class="sk-fill" data-w="50"></div></div><span class="sk-lvl">Basic</span>
+    </div>
+    <div class="sk-card reveal delay-4">
+      <div class="sk-top"><div class="sk-ico java"><i class="fa-brands fa-java"></i></div><span class="sk-pct">60%</span></div>
+      <h3>Java</h3><p>OOP concepts and core Java programming fundamentals.</p>
+      <div class="sk-bar"><div class="sk-fill" data-w="60"></div></div><span class="sk-lvl">Basic</span>
+    </div>
+    <div class="sk-card reveal delay-1">
+      <div class="sk-top"><div class="sk-ico excel"><i class="fa-solid fa-file-excel"></i></div><span class="sk-pct">65%</span></div>
+      <h3>MS Excel</h3><p>Spreadsheets, formulas, data entry and basic data analysis.</p>
+      <div class="sk-bar"><div class="sk-fill" data-w="65"></div></div><span class="sk-lvl">Intermediate</span>
+    </div>
+    <div class="sk-card reveal delay-2">
+      <div class="sk-top"><div class="sk-ico comm"><i class="fa-solid fa-comments"></i></div><span class="sk-pct">85%</span></div>
+      <h3>English Communication</h3><p>Good spoken and written English communication skills.</p>
+      <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div><span class="sk-lvl">Good</span>
+    </div>
+    <div class="sk-card reveal delay-3">
+      <div class="sk-top"><div class="sk-ico lead"><i class="fa-solid fa-users"></i></div><span class="sk-pct">80%</span></div>
+      <h3>Team Leading</h3><p>Guiding teams, coordinating tasks and delivering results.</p>
+      <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div><span class="sk-lvl">Good</span>
+    </div>
+  </div>
+</section>
+
+<section class="education" id="education">
+  <div class="sec-head reveal">
+    <span class="sec-num">03</span>
+    <div><span class="sec-tag">Education</span><h2>My <em>Studies</em></h2></div>
+  </div>
+  <div class="edu-timeline">
+    <div class="edu-card reveal delay-1">
+      <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="edu-info">
+        <span class="edu-year">2024 – 2027</span>
+        <h3>BSc. Computer Science with Cognitive System</h3>
+        <p class="edu-college">E.G.S Pillay Arts & Science College (Autonomous), Nagapattinam</p>
+        <p class="edu-desc">Studying core CS concepts, cognitive computing, programming and modern web technologies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certificates" id="certificates">
+  <div class="sec-head reveal">
+    <span class="sec-num">04</span>
+    <div><span class="sec-tag">Certificates</span><h2>My <em>Achievements</em></h2></div>
+  </div>
+  <div class="cert-grid">
+    <div class="cert-card reveal delay-1">
+      <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+      <div class="cert-info">
+        <h3>Java Programming</h3>
+        <p class="cert-issuer">Gtech Computer Class</p>
+        <p class="cert-desc">Certified in Java fundamentals, OOP concepts and core programming logic.</p>
+      </div>
+      <div class="cert-badge">✓ Certified</div>
+    </div>
+    <div class="cert-card reveal delay-2">
+      <div class="cert-icon"><i class="fa-solid fa-comments"></i></div>
+      <div class="cert-info">
+        <h3>English Communication</h3>
+        <p class="cert-issuer">E.G.S Pillay Arts & Science College (Autonomous)</p>
+        <p class="cert-desc">Certified in professional and conversational English communication skills.</p>
+      </div>
+      <div class="cert-badge">✓ Certified</div>
+    </div>
+  </div>
+</section>
+
+<section class="sports" id="sports">
+  <div class="sec-head reveal">
+    <span class="sec-num">05</span>
+    <div><span class="sec-tag">Sports</span><h2>I <em>Play</em></h2></div>
+  </div>
+  <div class="cert-grid">
+    <div class="cert-card reveal delay-1">
+      <div class="cert-icon">🏸</div>
+      <div class="cert-info">
+        <h3>Ball Badminton</h3>
+        <p class="cert-issuer">Zone & District Level</p>
+        <p class="cert-desc">Achieved Zone and District level certificates in Ball Badminton.</p>
+      </div>
+      <div class="cert-badge">🏆 Certified</div>
+    </div>
+    <div class="cert-card reveal delay-2">
+      <div class="cert-icon">🏏</div>
+      <div class="cert-info">
+        <h3>Cricket</h3>
+        <p class="cert-issuer">Player</p>
+        <p class="cert-desc">Active cricket player with strong team coordination skills.</p>
+      </div>
+    </div>
+    <div class="cert-card reveal delay-3">
+      <div class="cert-icon">♟️</div>
+      <div class="cert-info">
+        <h3>Chess</h3>
+        <p class="cert-issuer">Player</p>
+        <p class="cert-desc">Strategic thinking and problem solving through chess.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="sec-head reveal">
+    <span class="sec-num">06</span>
+    <div><span class="sec-tag">Contact</span><h2>Get In <em>Touch</em></h2></div>
+  </div>
+  <div class="contact-grid">
+    <div class="c-left reveal-left">
+      <p class="c-desc">I am open to internships and job opportunities . Feel free to contact me if you are hiring - my inbox is always open for opportunities. 📬</p>
+      <div class="c-links">
+        <a href="mailto:mohamedhasif.num@gmail.com" class="c-link">
+          <div class="c-link-ico"><i class="fa-solid fa-envelope"></i></div>
+          <div class="c-link-info"><span>Gmail</span><small>mohamedhasif.num@gmail.com</small></div>
+          <i class="fa-solid fa-arrow-up-right-from-square c-arr"></i>
+        </a>
+        <a href="mailto:https://www.linkedin.com/in/mohamed-hasif-3751103a2" class="c-link">
+          <div class="c-link-ico"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="c-link-info"><span>Lindedin</span><small>https://www.linkedin.com/in/mohamed-hasif-3751103a2</small></div>
+          <i class="fa-solid fa-arrow-up-right-from-square c-arr"></i>
+        </a>
+        <a href="tel:+917094854818" class="c-link">
+          <div class="c-link-ico"><i class="fa-solid fa-phone"></i></div>
+          <div class="c-link-info"><span>Phone</span><small>+91 70948 54818</small></div>
+        </a>
+        <div class="c-link">
+          <div class="c-link-ico"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="c-link-info"><span>Location</span><small>Main Road, Thirukkalachery, Tamil Nadu, India</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="c-right reveal-right">
+      <form id="contactForm" class="cform" action="https://formspree.io/f/xwvwwvlb" method="POST">
+        <div class="cf-row">
+          <div class="cf-field"><input type="text" id="senderName" name="name" placeholder=" " required/><label>Your Name</label></div>
+          <div class="cf-field"><input type="email" id="senderEmail" name="email" placeholder=" " required/><label>Your Email</label></div>
+        </div>
+        <div class="cf-field"><input type="text" id="senderPhone" placeholder=" "/><label>Your Phone (Optional)</label></div>
+        <div class="cf-field"><textarea id="message" name="message" rows="5" placeholder=" " required></textarea><label>Your Message</label></div>
+        <button type="submit" class="btn-primary" id="sendBtn">Send to Gmail <i class="fa-solid fa-paper-plane"></i></button>
+        <div id="formStatus" class="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="f-inner">
+    <span class="f-logo">KH<em>.</em></span>
+    <p>Designed & Built by <strong>Mohamed Hasif K</strong> · 2025</p>
+    <p>BSc. CS with Cognitive System · E.G.S Pillay College, Nagapattinam</p>
+    <p>Made with <span class="heart">♥</span> using HTML · CSS · JS</p>
+    <p> &copy; 2025 Mohamed Hasif k. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
