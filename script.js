@@ -74,7 +74,7 @@ if(contactForm){
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ formStatus.textContent='⚠️ Enter a valid email address.'; formStatus.className='form-status error'; return; }
     sendBtn.disabled=true; sendBtn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Opening...';
     var subject=encodeURIComponent('Portfolio Message from '+name);
-    var body=encodeURIComponent('Hello Mohamed Hasif K,\n\nNew message from your portfolio!\n\nName: '+name+'\nEmail: '+email+'\n'+(phone?'Phone: '+phone+'\n':'')+'\nMessage:\n'+message+'\n\n---\nSent via Portfolio Website');
+    var body=encodeURIComponent('Hello Mohamed Hasif K,\n\nNew message from your portfolio!\n\nName: '+name+'\nEmail: '+email+'\nPhone: '+phone+''+'\nMessage:\n'+message+'\n\n---\nSent via Portfolio Website');
     
     setTimeout(function(){
       contactForm.reset();
